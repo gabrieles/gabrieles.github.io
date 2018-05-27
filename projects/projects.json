@@ -1,0 +1,19 @@
+{ 
+	"project": {
+		"name": "aaa",
+		"url": "http://aaa.com",
+		"fundraising_url": "http://aaa.com",
+		"facebook": "http://aaa.com",
+		"short_title": "a",
+		"description": "dasda",
+		"thumbnail": "aaa.jpg",
+		"hero_image": "aa.jpg",
+		"carousel": {
+			"item": {
+				"type": "image",
+				"url": "asas.jpg",
+				"caption": "dsdas"
+			}
+		}
+	}
+}				
