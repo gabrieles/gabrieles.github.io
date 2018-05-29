@@ -65,6 +65,7 @@ body a {
 
 body a:hover {
     color: var(--col1h);
+	text-decoration: none;
 }
 
 body a:hover:after, 
@@ -97,6 +98,10 @@ body a.cta:after,
 body a.cta:before,
 body a.cta:hover:after,
 body a.cta:hover:before,
+body a.btn:after,
+body a.btn:before,
+body a.btn:hover:after,
+body a.btn:hover:before,
 body a.no-effect:after,
 body a.no-effect:before,
 body a.no-effect:hover:after,
