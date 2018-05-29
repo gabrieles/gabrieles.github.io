@@ -1,14 +1,14 @@
 :root {
     /* red */ 
     --col1: #D20E1D; 
-    --col1h: #7019E4;
+    --col1h: #ba0c1a;
     
     /* yellow */
-    --col2: var(--col2); 
+    --col2: #fed136; 
     --col2h: #fec810; 
     
     /* dark grey */
-    --col3: var(--col3); 
+    --col3: #212529; 
     --col3h: #0e0f11;
     
     /* light grey */
@@ -16,7 +16,7 @@
 	--col4h: #d7dce2; 
     
     /* middle grey */
-    --col5: var(--col5); 
+    --col5: #6c757d; 
 	--col5h: #4e545a;
 }
 
