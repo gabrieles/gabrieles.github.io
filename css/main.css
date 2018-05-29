@@ -1,7 +1,7 @@
 :root {
     /* red */ 
     --col1: #D20E1D; 
-    --col1h: #ba0c1a;
+    --col1h: #B80C19;
     
     /* yellow */
     --col2: #fed136; 
@@ -55,6 +55,56 @@ header.masthead .intro-text .intro-lead-in,
 }
 
 
+/* Links */
+body a {
+    color: var(--col1);
+    position: relative;
+    transition: color .2s ease;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: var(--col1h);
+}
+
+body a:hover:after, 
+body a:hover:before {
+    width: 100%;
+    left: 0;
+}
+     
+body a:after,
+body a:before {
+    content: ''; 
+    position: absolute;
+    top: calc(100% + 0.25em);
+    width: 0;
+    right: 0;
+    height: 0.125em;
+}
+  
+body a:before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    background: var(--col2);
+}
+  
+body a:after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: var(--col1h);
+}
+
+body a.cta:after,
+body a.cta:before,
+body a.cta:hover:after,
+body a.cta:hover:before,
+body a.no-effect:after,
+body a.no-effect:before,
+body a.no-effect:hover:after,
+body a.no-effect:hover:before {
+	display: none;
+}
+
+
 /* other */
 
 
@@ -79,13 +129,6 @@ p {
     line-height: 1.75;
 }
 
-body a {
-    color: var(--col1);
-}
-
-body a:hover {
-    color: var(--col1h);
-}
 
 body .text-primary {
     color: var(--col1) !important;
