@@ -106,10 +106,12 @@ a.cta-button .fa-circle:after {
     top: -6px;
     left: -7px;
     border: 3px solid var(--col1h);
+	opacity: 0;
 }
 
 a.cta-button:hover .fa-circle:after {
-    transition: 0.3s;
+    opacity: 1;
+	transition: 0.3s;
     transform: scale(1);
 }
 
