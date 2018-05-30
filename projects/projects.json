@@ -1,19 +1,38 @@
-{ 
-	"project": {
-		"name": "aaa",
-		"url": "http://aaa.com",
-		"fundraising_url": "http://aaa.com",
-		"facebook": "http://aaa.com",
-		"short_title": "a",
-		"description": "dasda",
-		"thumbnail": "aaa.jpg",
-		"hero_image": "aa.jpg",
-		"carousel": {
-			"item": {
-				"type": "image",
-				"url": "asas.jpg",
-				"caption": "dsdas"
-			}
-		}
-	}
-}				
+[
+{
+   "url": "#",
+   "img_thumb": "/projects/images/eric_thumb.jpg",
+   "short_title": "E.R.I.C. in Venezuela",
+   "headline": "Cancer awareness for 50,000 kids"
+},
+{
+   "url": "#",
+   "img_thumb": "/projects/images/cambodia_thumb.jpg",
+   "short_title": "Bee Free in Cambodia",
+   "headline": "Gender equality program"
+},
+{
+   "url": "#",
+   "img_thumb": "/projects/images/haiti_thumb.jpg",
+   "short_title": "Ultimate in Haiti",
+   "headline": "Youth development"
+},
+{
+   "url": "#",
+   "img_thumb": "/projects/images/jordan_thumb.jpg",
+   "short_title": "Coaches in Jordan",
+   "headline": "Build capacity and promote peace"
+},
+{
+   "url": "#",
+   "img_thumb": "/projects/images/uganda_thumb.jpg",
+   "short_title": "Kids clinics in Uganda",
+   "headline": "Youth coaching and development"
+},
+{
+   "url": "#",
+   "img_thumb": "/projects/images/india_thumb.jpg",
+   "short_title": "DISCschools in India",
+   "headline": "Training coaches and youth leaders"
+}
+]
