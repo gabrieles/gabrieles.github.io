@@ -126,6 +126,16 @@ h6 {
     font-weight: 700;
 }
 
+.utility-page h1 {
+    border-bottom: 3px solid var(--col1);
+    padding: 1em 0 0.25em;
+    margin-bottom: 1em;
+}
+
+.utility-page #mainNav {
+    background-color: var(--col3);
+}
+
 body .btn {
     font-weight: 700;
 }
