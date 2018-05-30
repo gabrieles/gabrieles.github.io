@@ -203,12 +203,6 @@
 
     <!-- Team -->
     <section class="bg-light" id="team">
-          
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
       
     </section>
 
@@ -398,7 +392,8 @@ $.getJSON("/team.json", function(data) {
 						  '<i class="fab fa-facebook-f"></i>' +
                        '</a>' +
 					'</li>';
-		if (member.linkedin) {			
+		}
+        if (member.linkedin) {			
             html += '<li class="list-inline-item">' +
                       '<a href="' + member.linkedin + '">' +
                         '<i class="fab fa-linkedin"></i>' +
@@ -407,7 +402,12 @@ $.getJSON("/team.json", function(data) {
 		}
         html += '</ul>' +
             '</div>' +
-          '</div>';
+          '</div>' +
+          '<div class="row">' +
+          '<div class="col-lg-8 mx-auto text-center">' +
+            '<p class="large text-muted">These are the people working on this site. We make decisions together by voting on each project, and then each coordinator will assist you during the development of your project.</p>' +
+          '</div>' +
+        '</div>';
 	});
 	//close last row and container
 	html += '</div></div>';	
