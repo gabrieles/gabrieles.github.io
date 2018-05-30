@@ -338,7 +338,7 @@ $.getJSON("projects/projects.json", function(data) {
 		if (key>0 && key % 3 == 0) {
 			html += '</div><div class="row">';	
 		}
-		html += '<div class="col-md-4 col-sm-6 project-item">' +
+		html += '<div class="col-md-4 col-sm-12 project-item">' +
 				'<a class="project-link" href="' + proj.url + '">' +
 				'<div class="project-hover">' +
                 '<div class="project-hover-content">' +
@@ -420,9 +420,10 @@ $.getJSON("team.json", function(data) {
 
 
 function pageFunction() {
+  addTeam();
   addProjectThumbs();
   console.log('aaa');
-  addTeam();
+  
 }
  
 </script>
