@@ -369,7 +369,8 @@ $.getJSON("team.json", function(data) {
 						'<h3 class="section-subheading text-muted">The people behind this site:</h3>' +
 					'</div>' +
 				'</div>';
-	//open first row
+	
+    //open first row
 	html += '<div class="row">';		
 	$.each(data, function(key, member){
 		if (key>0 && key % 3 == 0) {
@@ -400,19 +401,20 @@ $.getJSON("team.json", function(data) {
                       '<a href="' + member.linkedin + '">' +
                         '<i class="fab fa-linkedin"></i>' +
                       '</a>' +
-                    '</li>'
+                    '</li>';
 		}
         html += '</ul>' +
             '</div>' +
+          '</div>';
+	});
+	//close last row and container
+	html += '</div>' +
           '</div>' +
           '<div class="row">' +
           '<div class="col-lg-8 mx-auto text-center">' +
             '<p class="large text-muted">These are the people working on this site. We make decisions together by voting on each project, and then each coordinator will assist you during the development of your project.</p>' +
           '</div>' +
         '</div>';
-	});
-	//close last row and container
-	html += '</div></div>';	
     console.log(html);
     $('#team').html(html);
 });
