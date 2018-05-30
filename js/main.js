@@ -73,7 +73,7 @@ $.getJSON("/projects/projects.json", function(data) {
 					'<i class="fa fa-plus fa-3x"></i>' +
                 '</div>' +
 				'</div>' +
-				'<img class="img-fluid" src="' + proj.img_thumb' + " alt="">' +
+				'<img class="img-fluid" src="' + proj.img_thumb' + '" alt="">' +
 				'</a>' +
 				'<div class="project-caption">' +
 				'<h4>' + proj.short_title + '</h4>' +
