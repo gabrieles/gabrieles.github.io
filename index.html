@@ -413,6 +413,7 @@ $.getJSON("team.json", function(data) {
 	});
 	//close last row and container
 	html += '</div></div>';	
+    console.log(html);
     $('#team').html(html);
 });
 }
@@ -420,6 +421,7 @@ $.getJSON("team.json", function(data) {
 
 function pageFunction() {
   addProjectThumbs();
+  console.log('aaa');
   addTeam();
 }
  
