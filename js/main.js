@@ -46,43 +46,12 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
-
+  
+  if (typeof pageFunction === 'function') { 
+    pageFunction(); 
+  } else {
+    console.log('no pageFunction');
+  }
+  
 })(jQuery); // End of use strict
 
-
-function addProjectThumbs(){
-$.getJSON("/projects/projects.json", function(data) {
-	//create section header
-	var html = '<div class="container">' +
-				'<div class="row">' +
-					'<div class="col-lg-12 text-center">' +
-						'<h2 class="section-heading text-uppercase">Projects</h2>' +
-						'<h3 class="section-subheading text-muted">The latest projects from our amazing community:</h3>' +
-					'</div>' +
-				'</div>';
-	//open first row
-	html += '<div class="row">';		
-	$.each(data, function(key, proj){
-		if (key>0 && key % 3 == 0) {
-			html += '</div><div class="row">';	
-		}
-		html += '<div class="col-md-4 col-sm-6 project-item">' +
-				'<a class="project-link" href="' + proj.url + '">' +
-				'<div class="project-hover">' +
-                '<div class="project-hover-content">' +
-					'<i class="fa fa-plus fa-3x"></i>' +
-                '</div>' +
-				'</div>' +
-				'<img class="img-fluid" src="' + proj.img_thumb + '" alt="">' +
-				'</a>' +
-				'<div class="project-caption">' +
-				'<h4>' + proj.short_title + '</h4>' +
-				'<p class="text-muted">' + proj.headline + '</p>' +
-				'</div>' +
-				'</div>';
-	});
-	//close last row and container
-	html += '</div></div>';	
-    $('#project').html(html);
-});
-}
