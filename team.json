@@ -2,47 +2,47 @@
 {
    "img_thumb": "/images/team/1.jpg",
    "name": "Gabriele Sani",
-   "headline": "Chair",
-   "facebook": "",
-   "linkedin": "",
+   "title": "Chair",
+   "facebook": "https://www.facebook.com/wonderpollo",
+   "linkedin": "https://linkedin.com/in/gabrielesani/",
    "twitter": ""
 },
 {
    "img_thumb": "/images/team/2.jpg",
    "name": "Alex Queenie",
-   "headline": "Africa Coordinator",
+   "title": "Africa Coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
 },
 {
    "img_thumb": "/images/team/3.jpg",
-   "name": "Jesus Loreto",
-   "headline": "Americas coordinator",
+   "name": "Johanna von Toggenburg",
+   "title": "Asia coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
 },
 {
    "img_thumb": "/images/team/4.jpg",
-   "name": "Nick Zaloumis",
-   "headline": "Africa Coordinator",
+   "name": "Jesus Loreto",
+   "title": "Americas coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
 },
 {
    "img_thumb": "/images/team/5.jpg",
-   "name": "Thierry Fulconis",
-   "headline": "Europe Coordinator",
+   "name": "Nick Zaloumis",
+   "title": "Africa Coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
 },
 {
    "img_thumb": "/images/team/6.jpg",
-   "name": "John Smith",
-   "headline": "Asia Coordinator",
+   "name": "Thierry Fulconis",
+   "title": "Europe Coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
@@ -50,7 +50,7 @@
 {
    "img_thumb": "/images/team/7.jpg",
    "name": "Jane Smith",
-   "headline": "Oceania Coordinator",
+   "title": "Oceania Coordinator",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
@@ -58,7 +58,7 @@
 {
    "img_thumb": "/images/team/8.jpg",
    "name": "Brian Gisel",
-   "headline": "Advisor",
+   "title": "Advisor",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
@@ -66,7 +66,7 @@
 {
    "img_thumb": "/images/team/9.jpg",
    "name": "Caz Malone",
-   "headline": "Advisor",
+   "title": "Advisor",
    "facebook": "",
    "linkedin": "",
    "twitter": ""
