@@ -38,8 +38,8 @@ $.getJSON(jsonPath, function(data) {
 		      '</div>' +
 		    '</div>' +
           '</div>';	
-    elementID = "#" + elementID;
-    $( elementID ).html(html);
+    elementId = "#" + elementId;
+    $( elementId ).html(html);
 });
 }
 
@@ -100,8 +100,8 @@ $.getJSON("/team.json", function(data) {
             '<p class="large text-muted">' + message + '</p>' +
           '</div>' +
         '</div>';
-    elementID = '#' + elementID;
-    $(elementID).html(html);
+    elementId = '#' + elementId;
+    $(elementId).html(html);
 });
 }
 
