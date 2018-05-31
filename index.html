@@ -360,6 +360,7 @@ $.getJSON("projects/projects.json", function(data) {
 }
       
 function addTeam(){
+console.log('sas');
 $.getJSON("team.json", function(data) {
 	//create section header
 	var html = '<div class="container">' +
@@ -369,10 +370,11 @@ $.getJSON("team.json", function(data) {
 						'<h3 class="section-subheading text-muted">The people behind this site:</h3>' +
 					'</div>' +
 				'</div>';
-	
+	console.log(html);
     //open first row
 	html += '<div class="row">';		
 	$.each(data, function(key, member){
+    console.log(html);
 		if (key>0 && key % 3 == 0) {
 			html += '</div><div class="row">';	
 		}
@@ -423,8 +425,9 @@ $.getJSON("team.json", function(data) {
 
 function pageFunction() {
   addTeam();
+    console.log('aaa');
   addProjectThumbs();
-  console.log('aaa');
+
   
 }
  
