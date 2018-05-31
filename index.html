@@ -358,9 +358,10 @@ $.getJSON("projects/projects.json", function(data) {
     $('#project').html(html);
 });
 }
+
+
       
 function addTeam(){
-console.log('sas');
 $.getJSON("/team.json", function(data) {
 	//create section header
 	var html = '<div class="container">' +
@@ -370,11 +371,9 @@ $.getJSON("/team.json", function(data) {
 						'<h3 class="section-subheading text-muted">The people behind this site:</h3>' +
 					'</div>' +
 				'</div>';
-	console.log(html);
     //open first row
 	html += '<div class="row">';		
 	$.each(data, function(key, member){
-    console.log(html);
 		if (key>0 && key % 3 == 0) {
 			html += '</div><div class="row">';	
 		}
@@ -417,18 +416,14 @@ $.getJSON("/team.json", function(data) {
             '<p class="large text-muted">These are the people working on this site. We make decisions together by voting on each project, and then each coordinator will assist you during the development of your project.</p>' +
           '</div>' +
         '</div>';
-    console.log(html);
     $('#team').html(html);
 });
 }
 
 
 function pageFunction() {
-  addTeam();
-    console.log('aaa');
   addProjectThumbs();
-
-  
+  addTeam();
 }
  
 </script>
