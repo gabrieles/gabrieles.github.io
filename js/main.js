@@ -23,18 +23,18 @@ $.getJSON(jsonPath, function(data) {
 			html += '</div><div class="row">';	
 		}
 		html += '<div class="col-md-4 col-sm-12 project-item">' +
-				'<a class="project-link" href="' + proj.url + '">' +
-				'<div class="project-hover">' +
-                '<div class="project-hover-content">' +
-					'<i class="fa fa-plus fa-3x"></i>' +
-                '</div>' +
-				'</div>' +
-				'<img class="img-fluid" src="' + proj.img_thumb + '" alt="">' +
-				'</a>' +
-				'<div class="project-caption">' +
-				'<h4>' + proj.short_title + '</h4>' +
-				'<p class="text-muted">' + proj.headline + '</p>' +
-				'</div>' +
+				  '<a class="project-link" href="/projects/' + proj.id + '">' +
+				    '<div class="project-hover">' +
+                      '<div class="project-hover-content">' +
+					    '<i class="fa fa-plus fa-3x"></i>' +
+                      '</div>' +
+				    '</div>' +
+				    '<img class="img-fluid" src="' + proj.img_thumb + '" alt="">' +
+				  '</a>' +
+				  '<div class="project-caption">' +
+				    '<h4>' + proj.short_title + '</h4>' +
+				    '<p class="text-muted">' + proj.headline + '</p>' +
+				  '</div>' +
 				'</div>';
 	});
 	//close last row, add button, and close the container
