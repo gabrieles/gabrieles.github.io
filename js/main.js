@@ -20,6 +20,7 @@ function createProjectsTable(jsonPath,elementId) {
       html += '</tr>';          
     });
   });
+  console.log(html);
   elementId = "#" + elementId;
   $( elementId ).html(html);
 }
