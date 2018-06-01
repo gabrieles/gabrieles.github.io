@@ -11,9 +11,9 @@ function createProjectsTable(jsonPath,elementId) {
                 '<td class="proj-donate">';
                 if (proj.money_url || proj.equipment_text || proj.service_text) {
                   
-                    if (proj.money_url) { html += '<i class="fa fa-donate"></i>'; }
-                    if (proj.equipment_text) { html += '<i class="fa fa-gift"></i>'; }
-                    if (proj.service_text) { html += '<i class="fa fa-user-circle"></i>'; }
+                    if (proj.money_url) { html += '<i title="Money" class="fa fa-donate"></i>'; }
+                    if (proj.equipment_text) { html += '<i title="Equipment" class="fa fa-gift"></i>'; }
+                    if (proj.service_text) { html += '<i title="Skills" class="fa fa-user-circle"></i>'; }
                  }   
                  html += '</td>';
       html += '</tr>';          
