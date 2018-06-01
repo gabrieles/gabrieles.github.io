@@ -16,8 +16,9 @@ $.getJSON(jsonPath, function(data) {
 					'</div>' +
 				'</div>';
 	//open first row
-	html += '<div class="row">';		
-	$.each(data, function(key, proj){
+	html += '<div class="row">';
+    
+	$.each(homepageData, function(key, proj){
 		if (key>0 && key % 3 == 0) {
 			html += '</div><div class="row">';	
 		}
