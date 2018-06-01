@@ -120,8 +120,9 @@
 </section>
 
 <script>
-
-createProjectsTable('projects/projects.json','projects-table');
+function pageFunction() {
+  createProjectsTable('projects/projects.json','projects-table');
+}
 
 $('select').on('change', function() {
   var value = this.value.toLowerCase();
