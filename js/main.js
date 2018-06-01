@@ -1,6 +1,12 @@
 function addProjectThumbs(jsonPath, title, headline, elementId){
 
 $.getJSON(jsonPath, function(data) {
+    
+    //filter the data tu see only the entries marked for inclusion in the homepage
+    var homepageData = data.filter(function (entry) {
+      return entry.on_homepage === '1';
+    });
+    
 	//create section header
 	var html = '<div class="container">' +
 				'<div class="row">' +
