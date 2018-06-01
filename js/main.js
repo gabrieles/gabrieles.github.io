@@ -4,7 +4,7 @@ $.getJSON(jsonPath, function(data) {
     
     //filter the data tu see only the entries marked for inclusion in the homepage
     var homepageData = data.filter(function (entry) {
-      return entry.on_homepage === '1';
+      return entry.on_homepage === 1;
     });
     
 	//create section header
