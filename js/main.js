@@ -1,10 +1,9 @@
 function createProjectsTable(jsonPath,elementId) {
   
   var html = '';
-  console.log('aaa');
+
   $.getJSON(jsonPath, function(data) {
     $.each(data, function(key, proj){
-      console.log('bbb');
       html += '<tr>' +
                 '<td class="proj-title"><a href="' + proj.id + '">' + proj.title + '</a></td>' +
                 '<td class="proj-theme">' + proj.theme + '</td>' +
@@ -19,10 +18,10 @@ function createProjectsTable(jsonPath,elementId) {
                  html += '</td>';
       html += '</tr>';          
     });
+  
+    elementId = "#" + elementId;
+    $( elementId ).html(html);
   });
-  console.log(html);
-  elementId = "#" + elementId;
-  $( elementId ).html(html);
 }
 
 
