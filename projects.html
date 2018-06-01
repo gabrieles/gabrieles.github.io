@@ -110,7 +110,7 @@
         <div class="row">
           <div class="col-lg-12">
              <div class="table-responsive table-hover table-bordered">
-             <table id="projects-table" class="table">
+             <table id="projects" class="table">
              
              </table>
              </div>
@@ -121,7 +121,7 @@
 
 <script>
 function pageFunction() {
-  createProjectsTable('projects/projects.json','projects-table');
+  createProjectsTable('projects/projects.json','projects');
 }
 
 $('select').on('change', function() {
