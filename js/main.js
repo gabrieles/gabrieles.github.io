@@ -8,7 +8,7 @@ function createProjectsTable(jsonPath,elementId) {
                 '<td class="proj-title"><a href="' + proj.id + '">' + proj.title + '</a></td>' +
                 '<td class="proj-theme">' + proj.theme + '</td>' +
                 '<td class="proj-country">' + proj.country + '</td>';
-                if (proj.money_url || proj.equipment_text || proj.service_text) {}
+                if (proj.money_url || proj.equipment_text || proj.service_text) {
                   html += '<td class="proj-donate">';
                     if (proj.money_url) { html += '<i class="fa fa-donate fa-stack-1x fa-inverse"></i>'; }
                     if (proj.equipment_text) { html += '<i class="fa fa-gift fa-stack-1x fa-inverse"></i>'; }
