@@ -46,7 +46,7 @@
           <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" href="/#contactModal">Contact</a>
+          <a class="nav-link" data-toggle="modal" href="#contactModal">Contact</a>
         </li>
       </ul>
     </div>
@@ -83,7 +83,7 @@
 			  </span>
 			</a>  
             <h4 class="service-heading"><a class="cta cta-ask cta-text" data-toggle="modal" href="#askModal">Ask</a></h4>
-            <p class="text-muted">Do you have an idea that needs funding, equipment, or someone to help you? Ask for it here!</p>
+            <p class="text-muted">Do you have a project that needs funding, equipment, or someone to help you? Ask for it here!</p>
           </div>
           <div class="col-md-6">
 		    <a class="cta cta-give cta-button" data-toggle="modal" href="#askModal">
@@ -93,7 +93,7 @@
 			  </span>
 			</a> 
             <h4 class="service-heading"><a class="cta cta-ask cta-text" data-toggle="modal" href="#giveModal">Give</a></h4>
-            <p class="text-muted">Besides funding or equipment, your expertise and feedback can help a project thrive, too!</p>
+            <p class="text-muted">Register here to support worthy projects! It is not just money, your expertise can be very valuable, too!</p>
           </div>
 		</div>
 		<div class="row text-center">	
@@ -240,7 +240,16 @@
       </div>
     </section>
 
-	<!-- Modal 1 -->
+	
+
+<script>
+function pageFunction() {
+  addProjectThumbs('projects/projects.json', 'Projects', 'The latest projects from our amazing community', 'project');
+  addTeam('team.json', 'Our team', 'The people behind this site:', 'team', 'These are the people working on this site. We make decisions together by voting on each project, and then each coordinator will assist you during the development of your project.');
+}
+ 
+</script>
+ <!-- Modal 1 -->
     <div class="tgt-modal modal fade" id="askModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -259,7 +268,8 @@
 
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close </button>
+                    Close 
+                  </button>
                 </div>
               </div>
             </div>
@@ -269,7 +279,7 @@
     </div>
 
 	
-	<!-- Modal 2 -->
+	<!-- Modal 3 -->
     <div class="tgt-modal modal fade" id="giveModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -288,7 +298,8 @@
 
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close </button>
+                    Close 
+                  </button>
                 </div>
               </div>
             </div>
@@ -311,12 +322,13 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- iframe Go Here -->
-                  
-				  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrJq-fw_c9xPBk9L5Mu5RoxlGFnUENID8WaizTUaLilIVZPg/viewform?embedded=true" style="width:96%; max-width:720px; height: 640px;" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+                 
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrJq-fw_c9xPBk9L5Mu5RoxlGFnUENID8WaizTUaLilIVZPg/viewform?embedded=true"style="width:96%; max-width:720px; height: 440px;" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                 
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close </button>
+                    Close 
+                  </button>
                 </div>
               </div>
             </div>
@@ -325,14 +337,7 @@
       </div>
     </div>
 
-<script>
-function pageFunction() {
-  addProjectThumbs('projects/projects.json', 'Projects', 'The latest projects from our amazing community', 'project');
-  addTeam('team.json', 'Our team', 'The people behind this site:', 'team', 'These are the people working on this site. We make decisions together by voting on each project, and then each coordinator will assist you during the development of your project.');
-}
- 
-</script>
- <!-- Footer -->
+<!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
@@ -348,7 +353,7 @@ function pageFunction() {
                 <a href="/terms-of-use">Terms of Use</a>
               </li>
 			  <li class="list-inline-item">
-                <a data-toggle="modal" href="/#contactModal">Contact</a>
+                <a data-toggle="modal" href="#contactModal">Contact</a>
               </li>
             </ul>
           </div>
