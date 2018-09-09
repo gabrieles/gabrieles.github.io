@@ -883,3 +883,5 @@ td.proj-donate i {
     display: block;
     border-style: none;
 }
+.table-bordered table{
+    margin-bottom: 0;
