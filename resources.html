@@ -112,8 +112,26 @@
 </section>
 
 <script>
-function pageFunction() {
-  createTableWithFilters('resources/resources.json','resources');
+
+function createTableWithResources() {  
+  var jsonPath = 'resources/resources.json';
+  var html = '';
+
+  $.getJSON(jsonPath, function(data) {
+  
+    $.each(data, function(key, item){
+      html += '<tr item-id="resource-' + item.id + '">';
+      
+      html += '<td class="item-title"><a href="' + item.url + '">' + item.title + '</a></td>';
+      html += '<td class="item-theme">' + item.theme + '</td>';
+      html += '<td class="item-description">' + item.description + '</td>';
+      
+      html += '</tr>';      
+    });
+  
+    $('#resources').html(html);
+  });
+  
 }
 
 $('select').on('change', function() {
