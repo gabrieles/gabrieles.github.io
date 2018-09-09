@@ -29,7 +29,7 @@
 <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-<title>WFDF Development - Projects</title><script src="js/main.js?v=3"></script><link href="/css/main.css?v=3" rel="stylesheet"></head><body id="page-top" class="utility-page"><nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+<title>WFDF Development - Projects</title><script src="js/main.js?v=4"></script><link href="/css/main.css?v=3" rel="stylesheet"></head><body id="page-top" class="utility-page"><nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
   <div class="container">
     <a class="navbar-brand no-effect js-scroll-trigger" href="/#page-top">Development</a>
     <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,9 +124,38 @@
 </section>
 
 <script>
-function pageFunction() {
-  createTableWithFilters('projects/projects.json','projects');
+
+$( document ).ready(function() {
+  var jsonPath = 'projects/projects.json';
+  var html = '';
+
+  $.getJSON(jsonPath, function(data) {
+  
+    $.each(data, function(key, item){
+      if (item.is_published == '1') {
+        html += '<tr>';
+       
+        html += '<td class="item-title"><a href="/projects/' + item.id + '">' + item.title + '</a></td>';
+        html += '<td class="item-theme">' + item.theme + '</td>';
+        html += '<td class="item-country">' + item.country + '</td>';
+        html += '<td class="item-donate">';   
+                        
+        if (item.money_url || item.equipment_text || item.service_text) {
+          if (item.money_url) { html += '<i title="Money" class="fa fa-donate"></i>'; }
+          if (item.equipment_text) { html += '<i title="Equipment" class="fa fa-gift"></i>'; }
+          if (item.service_text) { html += '<i title="Skills" class="fa fa-user-circle"></i>'; }
+        }   
+        html += '</td>';  
+      
+        html += '</tr>';
+      }  
+    });
+  
+    $('#projects').html(html);
+  });
+  
 }
+
 
 $('select').on('change', function() {
   var value = this.value.toLowerCase();
