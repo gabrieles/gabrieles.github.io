@@ -1,38 +1,3 @@
-function createTableWithFilters(jsonPath,elementId) {
-  
-  var html = '<tr>';
-
-  $.getJSON(jsonPath, function(data) {
-    $.each(data, function(key, item){
-      if (item.id && item.title) {
-        html += '<td class="item-title"><a href="/projects/' + item.id + '">' + item.title + '</a></td>';
-      }
-      if (item.theme) {
-        html += '<td class="item-theme">' + item.theme + '</td>';
-      }
-      if (item.country) {
-        html += '<td class="item-country">' + item.country + '</td>';
-      }
-                        
-      if (item.money_url || item.equipment_text || item.service_text) {
-        html += '<td class="item-donate">';   
-        if (item.money_url) { html += '<i title="Money" class="fa fa-donate"></i>'; }
-        if (item.equipment_text) { html += '<i title="Equipment" class="fa fa-gift"></i>'; }
-        if (item.service_text) { html += '<i title="Skills" class="fa fa-user-circle"></i>'; }
-        html += '</td>';  
-      }   
-                                
-    });
-  
-    elementId = "#" + elementId;
-    $( elementId ).html(html);
-  });
-  
-  html += '</tr>';
-}
-
-
-
 function addProjectThumbs(jsonPath, title, headline, elementId){
 
 $.getJSON(jsonPath, function(data) {
