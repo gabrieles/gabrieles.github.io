@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><base target="_top"><meta charset="UTF-8">
+<!DOCTYPE html><html><head><style>.async-hide { opacity: 0 !important} </style><script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-M524S9V':true});</script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-125560576-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-125560576-1');</script><base target="_top"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -109,7 +109,7 @@ $( document ).ready(function() {
       if (item.is_published == '1') {
         html += '<tr item-id="resource-' + item.id + '">';
       
-        html += '<td class="item-title"><a href="' + item.url + '">' + item.title + '</a></td>';
+        html += '<td class="item-title"><a href="' + item.url + '" target="_blank">' + item.title + '</a></td>';
         html += '<td class="item-theme">' + item.theme + '</td>';
         html += '<td class="item-description">' + item.description + '</td>';
       
