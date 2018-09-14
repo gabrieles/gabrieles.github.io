@@ -89,11 +89,11 @@
 
 $( document ).ready(function() {
   var jsonPath = 'certificates/certificates.json';
-  var html = '<th>' +
+  var html = '<tr>' +
                '<td>Certificate holder</td>' +
                '<td>Award Level</td>' +
                '<td>Certificate ID</td>' +
-             '</th>' ;
+             '</tr>' ;
 
   $.getJSON(jsonPath, function(data) {
   
