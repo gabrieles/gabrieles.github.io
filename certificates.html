@@ -89,7 +89,11 @@
 
 $( document ).ready(function() {
   var jsonPath = 'certificates/certificates.json';
-  var html = '';
+  var html = '<th>' +
+               '<td>Certificate holder</td>' +
+               '<td>Award Level</td>' +
+               '<td>Certificate ID</td>' +
+             '</th>' ;
 
   $.getJSON(jsonPath, function(data) {
   
@@ -98,7 +102,7 @@ $( document ).ready(function() {
         
         html += '<td class="cert-name">' + cert.displayName + '</td>';
         html += '<td class="cert-level">' + cert.awardLevel + '</td>';
-        html += '<td class="cent-id">' + cert.country + '</td>';
+        html += '<td class="cent-id">' + cert.certificateID + '</td>';
                               
         html += '</tr>'; 
     });
